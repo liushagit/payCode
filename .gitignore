@@ -44,7 +44,7 @@ build.log
 .svn
 .CVS
 .hg*
-*.bsh
+
 
 # switch to regexp syntax.
 #  syntax: regexp

@@ -1,0 +1,17 @@
+import com.payinfo.net.bootstrap.*;
+import com.payinfo.net.rmi.RemoteConfig;
+
+
+// loading bootstrap configuration
+BootstrapProperties bootstrap = new BootstrapProperties();
+bootstrap.protocol="http"; // http or socket
+bootstrap.port=9981;
+
+
+// loading remote resource
+remotes = new RemoteConfig[]{
+new RemoteConfig("OGPaySystem","localhost",9992),
+};
+
+
+
