@@ -1,12 +1,51 @@
+log
+log/*
+/*.log.*
+.checkstyle
+
+# use glob syntax.
+syntax: glob
+*.ser
 *.class
+*~
+*.bak
+*.off
+*.old
+*.sql
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# eclipse conf file
+.settings
+.classpath
+.project
+.manager
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+
+# idea
+*.iml
+*.iws
+*.ipr
+/.idea
+
+
+# building
+bin
+target
+#build
+null
+#tmp*
+#temp*
+dist
+test-output
+build.log
+
+
+# other scm
+.svn
+.CVS
+.hg*
+*.bsh
+
+# switch to regexp syntax.
+#  syntax: regexp
+#  ^\.pc//gserver
