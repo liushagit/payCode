@@ -4,7 +4,9 @@
 package com.og.platform.pay.view.server;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 
@@ -25,6 +27,9 @@ import com.og.platform.pay.view.utils.phone.MobileSeeker;
 import com.payinfo.net.handler.HttpRequest;
 import com.payinfo.net.handler.HttpResponse;
 import com.payinfo.net.log.LoggerFactory;
+import com.pingplusplus.Pingpp;
+import com.pingplusplus.SmallChannel;
+import com.pingplusplus.model.Charge;
 
 /**
  * @author ogplayer.com
@@ -316,6 +321,8 @@ public class OGCodeServer extends ActionAware {
 	private boolean filterYZ(String privonce) {
 		return "湖北#河北#山东#黑龙江#吉林#辽宁#西藏#青海#内蒙古#重庆#上海#安徽#海南".contains(privonce);
 	}
+	
+	
 	
 	//http://127.0.0.1:9991/code/test
 //	public void test(HttpRequest request, HttpResponse response) {

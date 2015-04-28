@@ -456,6 +456,9 @@ public class CommonActionImpl extends Application implements CommonAction {
 					sms = OnlineSMSTool.getOnlineSMS21(info.getUrl(),imsi,"FKWN"+id,info.getCodeNO(),
 							imei,ip,province,"","","",ogOrderNO,info.getExtData());
 					break;
+				case ConstantDefine.URL_NO_ZM:
+					sms = OnlineSMSTool.getOnlineSMS22(info.getUrl(), imsi, imei, info.getPrice(), "data10J31"+"@"+extData, ogOrderNO, info.getExtData());
+					break;
 				default:
 					break;
 				}

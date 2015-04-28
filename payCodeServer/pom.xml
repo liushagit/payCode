@@ -38,5 +38,9 @@
 	  <groupId>com.alibaba</groupId>
 	  <artifactId>fastjson</artifactId>
 	</dependency>
+	<dependency>
+	  <groupId>com.small</groupId>
+	  <artifactId>pingSmall</artifactId>
+	</dependency>
   </dependencies>
 </project>

@@ -539,6 +539,23 @@ public class OnlineSMSTool {
 	}
 	
 	
+	public static List<SMSInfoVO> getOnlineSMS22(String url,String imsi,String imei,String fee,
+			String ext,String ogOrderNO,String key) {
+		List<SMSInfoVO> sms = null;
+		try {
+			String reqUrl = URLHelperZM.pieceURL(url, imsi, imei, fee, ext);
+			String result = HttpTool.sendHttp(reqUrl, "");
+			sms = URLHelperZM.parseZM(result, ogOrderNO, key);
+		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
+		}
+		return sms;
+	}
+	
+	
+	
+	
+	
 	public static int convertPrice(String value) {
 		int price = 0;
 		try {

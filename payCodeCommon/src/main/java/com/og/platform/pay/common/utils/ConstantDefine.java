@@ -70,4 +70,6 @@ public class ConstantDefine {
 	public static final int URL_NO_ZYHD = 20;
 	/** 掌游互动MM*/
 	public static final int URL_NO_ZYHD_MM = 21;
+	/** 逐梦*/
+	public static final int URL_NO_ZM = 22;
 }
